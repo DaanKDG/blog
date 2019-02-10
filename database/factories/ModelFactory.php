@@ -14,19 +14,10 @@
 $factory->define(App\User::class, function (Faker\Generator $faker) {
 
     return [
-        'email' => $faker->safeEmail,
-        'username' => $faker->username,
-        'password' => bcrypt('qwerty123'),
-        'name' => $faker->name,
+        'email' => "dax@cc.com",
+        'username' => "Dax18",
+        'password' => bcrypt('123123'),
+        'name' => "Daan Boschmans",
         'remember_token' => str_random(10),
     ];
-});
-
-$factory->define(App\Post::class, function ($faker) use ($factory) {
-
-	return [
-		'title' => $faker->sentence(12),
-		'content' => $faker->realText,
-		'author_id' => factory(App\User::class)->create()->id
-	];
 });
