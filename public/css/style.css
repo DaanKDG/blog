@@ -5,10 +5,12 @@
 	-moz-box-sizing: border-box;
 }
 body {
-	background-color: #f6f6f6;
-	color: #212121;
+    margin: 0 auto;
+    width: 100%;
+	background-color: black;
+	color: white;
 	line-height: 1.45;
-	font-family:"Tahoma", sans-serif;
+	font-family: "arial";
 }
 a,
 a:hover,
@@ -93,7 +95,7 @@ form h1 {
     text-transform: uppercase;
     letter-spacing: 5px;
     margin-bottom: 30px;
-    color: #666666;
+    color: white;
 }
 form table tr td:first-child {
     width: 15%;
@@ -164,6 +166,9 @@ tr.status.failed #messagelog {
     padding:10px 20px;
     text-align: center;
     font-weight: bold;
+}
+label {
+    color: black;
 }
 #dashboard section.main {
     width: 80%;
@@ -277,17 +282,19 @@ article .detail {
 }
 ul.nav li {
     display: inline-block;
-    padding: 15px 10px;
+    padding: 15px 0px;
     letter-spacing:2px;
     text-transform:uppercase;
     font-size:.8em;
 }
 ul.nav li:first-child {
-    padding-left:40px;
+    padding-left: 0px;
+    
 }
 nav {
-    background-color: #446cbc;
-    color: #fff;
+
+    color: white;
+    font-weight: bold;
     margin:-10px 1% 0;
 }
 
@@ -302,7 +309,7 @@ article.full {
 
 article.full h1 {
     font-size: 3em;
-    color: #555;
+    color: black;
     text-align: center;
     margin-bottom: 20px;
 }

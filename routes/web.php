@@ -30,13 +30,6 @@ Route::group(['prefix' => 'login', 'middleware' => 'guest'], function () {
 /**
  * Register page
  */
-Route::group(['prefix' => 'register', 'middleware' => 'guest'], function () {
-	// Get register page
-	Route::get('/', [
-		'uses'	=> 'UserController@getRegister',
-		'as'	=> 'register'
-	]);
-});
 /**
  * Dashboard
  */

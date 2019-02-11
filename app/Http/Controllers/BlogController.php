@@ -13,12 +13,10 @@ class BlogController extends Controller
 	// Blog index
     public function index ()
     {
-    	$title = 'Laravel Blog by RohmanHM';
     	$posts = Post::orderBy('id', 'desc')
                 ->get();
 
     	$param = [
-    		'title' => $title,
     		'posts'	=> $posts,
             'path'  => 'index'
     	];
@@ -27,11 +25,9 @@ class BlogController extends Controller
 
     public function view ($id, Request $request)
     {
-        $title = 'Laravel Blog by RohmanHM';
         $post = Post::find(intval($id));
 
         $param = [
-            'title' => $title,
             'post' => $post,
             'path'  => 'view'
         ];

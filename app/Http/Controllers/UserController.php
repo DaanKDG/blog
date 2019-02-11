@@ -21,9 +21,4 @@ class UserController extends Controller
      * Register Area
      */
     // Get register page
-    public function getRegister ()
-    {
-    	$title = "Please Register";
-    	return view('blog.register.register', compact('title'));
-    }
 }
