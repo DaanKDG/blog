@@ -8,7 +8,8 @@
 			Author : <span>{{ $param['post']->users->name }}</span>
 		</div>
 	</div>
-	<div class="content">
+	<hr style="border-color: white !important;">
+	<div class="content" style="color: white !important;">
 		{!! $param['post']->content !!}
 	</div>
 </article>

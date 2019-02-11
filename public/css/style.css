@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -7,17 +9,20 @@
 body {
     margin: 0 auto;
     width: 100%;
-	background-color: black;
+	background-color: #272838 !important;
 	color: white;
 	line-height: 1.45;
-	font-family: "arial";
+	font-family: 'Ubuntu', sans-serif !important;
+
 }
-a,
-a:hover,
-a:link,
-a:focus {
-	color:#446CB3;
-	text-decoration:none;
+.jumbotron {
+    background-color: #F26157!important;
+    color: white !important;
+}
+
+h1:hover, a:hover {
+    color: white !important;
+    text-decoration: none !important;
 }
 li {
     position:relative;
@@ -186,9 +191,7 @@ ul.sidebar-menu li {
     padding: 15px 0;
     font-size: 0.8em;
 }
-ul.sidebar-menu li:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-}
+
 ul.sidebar-menu li  a {
 	color:inherit;
 	text-transform:uppercase;
@@ -252,7 +255,7 @@ button.btndelete {
     color: #fff;
 }
 article {
-    background-color: #fff;
+    background-color: #F26157!important;
     padding: 30px;
     border-radius: 2px;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
@@ -271,14 +274,14 @@ article .title {
 }
 article .content {
     font-size: .9em;
-    color: #444;
+    color: white;
     height: 120px;
     overflow: hidden;
 }
 article .detail {
     font-size: .7em;
     margin: 1px 0px 10px;
-    color: #999;
+    color: white;
 }
 ul.nav li {
     display: inline-block;
@@ -309,7 +312,7 @@ article.full {
 
 article.full h1 {
     font-size: 3em;
-    color: black;
+    color: white;
     text-align: center;
     margin-bottom: 20px;
 }

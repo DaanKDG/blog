@@ -37,6 +37,9 @@ class Kernel extends HttpKernel
             'bindings',
         ],
     ];
+    protected $commands = [
+        Commands\createAdmin::class
+      ];
 
     /**
      * The application's route middleware.
